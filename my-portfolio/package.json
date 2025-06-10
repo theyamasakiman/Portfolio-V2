@@ -17,11 +17,11 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-"scripts": {
-  "build": "next build && next export",
-  "start": "next start"
-},
-
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,5 +39,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theyamasakiman/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theyamasakiman/website/issues"
+  },
+  "homepage": "https://github.com/theyamasakiman/website#readme"
 }
