@@ -2,6 +2,14 @@ import React from 'react';
 import './index.css';
 import Home from '../app/home';
 
+export const metadata = {
+  title: "Cyams Portfolio",
+  description: "Welcome to my portfolio site",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export default function Page() {
   return <Home />;
 }
