@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "../components/nav/navbar";
 import '../App.css';
-import CBV from "../assets/Cote logo (white).png";
-import IA from "../assets/Figma2.png";
-import iteration from "../assets/Figma1.png";
+import CBV from "/assets/Cote logo (white).png";
+import IA from "/assets/Figma2.png";
+import iteration from "/assets/Figma1.png";
 import Footer from "../components/footer/footer";
 
 export default function CoteBonnevilleRedesign() {
