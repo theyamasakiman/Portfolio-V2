@@ -19,8 +19,8 @@ export default function CoteBonnevilleRedesign() {
           <div id="boogie">
             <Link href="/">&lt; BACK TO PORTFOLIO</Link>
             </div>
-          
-          <Image src={CBV} alt="Côte Bonneville Logo" className="main" width={340} height={340} />
+
+          <Image src="/assets/Cote logo (white).png" alt="Côte Bonneville Logo" className="main" width={340} height={340} />
 
           <section className="mummy">
             <h1>Redesign Overview</h1>
@@ -76,7 +76,7 @@ export default function CoteBonnevilleRedesign() {
                 This was remedied by simplifying userflows to almost always end up in one of the e-commerce tabs, and simplifiying the about tab to include all elements of the winery, in an interconnected series of webpages that covered everything from their humble beginnings, to the history of their tasting room.
               </p>
               <div className="img-side">
-                <Image src={IA} alt="Information Architecture" width={680} height={150} />
+                <Image src="/assets/Figma2.png" alt="Information Architecture" width={680} height={150} />
                 <p>First iteration of the site's information architecture presented to the client</p>
               </div>
               <h3>Image</h3>
@@ -91,7 +91,7 @@ export default function CoteBonnevilleRedesign() {
                 After coming up with ways to solve the problems presented to me, I followed through with some rough wireframes and Information Architecture outlining my vision for the new face of Côte Bonneville on the internet. Using figma, I was able to rapidly test out new button placement, test out new flows for purchasing wine, signing up for news letters, and pushing the winery's wineclubs.
               </p>
               <div className="img-side">
-                <Image src={iteration} alt="Figma landing page versions" width={500} height={300} />
+                <Image src="/assets/Figma1.png" alt="Figma landing page versions" width={500} height={300} />
                 <p>Two medium fidelity versions of the landing page for Côte Bonneville</p>
               </div>
               <p className="text-box">
