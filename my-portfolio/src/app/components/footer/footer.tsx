@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <Image
             className="socials"
-            src={insta}
+            src="/assets/insta.png"
             title="instagram"
             alt="instagram"
             width={53}
@@ -30,7 +30,7 @@ const Footer = () => {
         >
           <Image
             className="socials"
-            src={linked}
+            src="/assets/linkedin.png"
             title="linkedin"
             alt="linkedin"
             width={40}
@@ -44,7 +44,7 @@ const Footer = () => {
         >
           <Image
             className="socials"
-            src={github}
+            src="/assets/github(white).png"
             title="github"
             alt="github"
             width={40}
