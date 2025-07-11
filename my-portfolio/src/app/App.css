@@ -6,7 +6,7 @@ html {
   font-family: 'Montserrat', serif;
 }
 .arrow {
-  animation: bounce 8s infinite;
+  animation: bounce 5s infinite;
 }
 
 @keyframes bounce {
@@ -19,6 +19,81 @@ html {
   100% {
     transform: translateY(0);
   }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(1000%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-out {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.slide-out {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  transform: translateY(0);
+  opacity: 1;
+}
+.slide-in {
+  transform: translateY(100%);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s, 0.5s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.animate:hover .slide-in {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0s, .5s; 
+}
+
+.animate {
+  padding: 5rem 15rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.animate:hover .slide-out{
+   transform: translateY(-100%);
+  opacity: 0;
+}
+
+.animate:hover .slide-in{
+  animation-delay: 2s;
+  opacity: 1;
 }
 
 a,
@@ -67,12 +142,12 @@ main {
 
 h1 {
   font-weight: 700;
-  font-size: 4vh;
+  font-size: 3rem;
 }
 
 h2 {
   margin: 0.9rem 0;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 article {
@@ -103,10 +178,7 @@ article img,
   display: flex;
   margin: auto;
   justify-content: center;
-  max-width: 50vw;
-  max-height: 40vh;
-  border-radius: 25px;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: 500;
 }
 
@@ -126,7 +198,7 @@ article img,
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 .margr {
@@ -144,7 +216,7 @@ article img,
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #f8f8f8;
   letter-spacing: 1rem;
@@ -156,11 +228,6 @@ article img,
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .logo img {
-    height: 100px;
-  }
-}
 
 .navbar {
   display: flex;
@@ -168,6 +235,10 @@ article img,
   align-items: center;
 
   background-color: #000;
+}
+
+.logo:hover {
+  animation: rotate 0.5s ease-in-out;
 }
 
 .logo img {
@@ -204,16 +275,6 @@ p {
   font-size: 1.2rem;
 }
 
-.button {
-  padding: 0 2vw;
-  border: 1px solid black;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: xx-large;
-  margin-bottom: 0;
-}
-
 .tab-header {
   transition: color 0.3s;
 }
@@ -226,24 +287,54 @@ p {
 }
 
 .fol-con {
-  max-width: fit-content;
-    font-family: 'Montserrat', serif;
+  max-width: 340px;
+  margin: 50px;
+  display: flex;
+  overflow: hidden;
+  font-family: 'Montserrat', serif;
   margin-bottom: 5rem;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.card-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: 20px;
+  height: 340px;
+  width: 340px;
+}
+
+.fol-con:hover .card-text{
+  opacity: 1;
+}
+.fol-con img {
   transition: transform 0.3s ease-in-out;
 }
 
-.fol-con:hover {
+.fol-con:hover img{
   transform: scale(1.05);
 }
 
 .folio-c {
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -280,19 +371,11 @@ p {
   max-height: 40px;
 }
 
-.sub-icon {
-  font-size: 0.8rem;
-  margin: 0;
-}
 
 #boogie {
   padding-top: 20px;
 }
 
-.small-text {
-  font-size: 1rem;
-  text-align: center;
-}
 
 .read-text {
   font-size: 1.2rem;
@@ -300,15 +383,17 @@ p {
 }
 
 .my-row {
+  padding: 0;
+  width: 100%;
   display: flex;
-  margin-top: 5rem;
   flex-direction: row;
-  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexy {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -323,11 +408,10 @@ p {
   flex-direction: row;
 }
 
-.center {
-  display: flex;
+.design {
   letter-spacing: 0.75rem;
-  margin: 0 1.5rem;
-  font-size: xx-large;
+  margin: 1rem 0;
+  font-size: 1rem;
 }
 
 .hidden {

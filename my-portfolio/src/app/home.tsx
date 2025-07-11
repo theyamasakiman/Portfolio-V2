@@ -1,33 +1,52 @@
+'use client';
 import React from 'react';
 import Navbar from './components/nav/navbar';
 import ProjectCard from './components/card/card';
 import '../app/App.css';
 import logo from './assets/logo_frame.png';
-import CBV from './assets/Cote logo (white).png';
-import CGB from './assets/CGB.png';
-import zest from './assets/zester.png';
-import pnb from './assets/CharcoalMainTextLogo.png'
+import CBV from './assets/cote_img.png';
+import CGB from './assets/gear.png';
+import zest from './assets/zestfriends.jpg';
+import pnb from './assets/PNB.png'
 import Footer from './components/footer/footer';
 import Image from "next/image";
 
 
+
 const Home: React.FC = () => {
+  
   return (
     <div className="container">
       <Navbar />
-            <div id="halo">
-        <a href="#proj">
-          <Image className="main arrow" src={logo} alt="stylized 'c' and 'y' for chris' logo" height={340} width={340} />
-          <div className="arrow main">I</div>
-        </a>
+      <div id="halo">
+        <div className="animate">
+          <div className='slide-out'>
+            <Image className="arrow" src={logo} alt="stylized 'c' and 'y' for chris' logo" height={200} width={200} />
+            <div className="flexy center arrow">
+              <div className="design">CHRIS</div>
+              <div className="design">YAMASAKI</div>
+              <div className="design">DESIGN</div>
+            </div>
+          </div>   
+          <div className='slide-in'>
+            <div className="read-text">
+              As a UX Architect:
+            </div>
+            <div className="read-text">
+              I create pixel-perfect UIs that match a simple and effortless UX, where less is more.
+            </div>
+            <div className="read-text">
+              As a Front-end Engineer:
+            </div>
+            <div className="read-text">
+              I bring to life designs with React, TypeScript, and Next.js.
+            </div>
+          </div>
+        </div>
       </div>
       <main>
         <header className="middle">
-          <div className="flexy center">
-            <div className="center">CHRIS</div>
-            <div className="center">YAMASAKI</div>
-            <div className="center">DESIGN</div>
-          </div>
+        
         </header>
 
         <div className="title-container">

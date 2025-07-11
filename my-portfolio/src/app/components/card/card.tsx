@@ -13,12 +13,20 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, link, text }) => {
   return (
+    <div className="fol-con">
+      <Link  href={link} target="_blank" rel="noopener noreferrer">
+        <div className="photo"> 
+          <Image src={image} alt={title} height={340} width={340}/>
+        </div>
+      </Link>
+      <div className="card-text">
+        <div className="card-title">{title}</div>
+        <div className="read-text">{text}</div>
+      </div>
+      
+    </div>
 
-    <Link className="fol-con" href={link} target="_blank" rel="noopener noreferrer">
-      <Image className="main" src={image} alt={title} height={340} width={340}/>
-      <div className="main">{title}</div>
-      <div className="main read-text">{text}</div>
-    </Link>
+    
   );
 };
 
