@@ -97,7 +97,14 @@ body {
   color: #f8f8f8;
 }
 
+.direct-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 li {
+  font-size: 1.2rem;
   margin: 2px;
 }
 
@@ -107,11 +114,6 @@ li::marker {
 
 ul {
   margin: 20px 35px;
-}
-
-main {
-  padding-top: 5%;
-  margin-top: 3rem;
 }
 
 .text-box {
@@ -387,6 +389,20 @@ p {
 .read-text {
   font-size: 1.2rem;
   padding-top: 10px;
+  line-height: 2rem;
+}
+
+.about-text {
+  text-align: left;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  line-height: 2rem;
+  width: 70%;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  margin: 0;
 }
 
 .my-row {
@@ -413,6 +429,7 @@ p {
   align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .design {
@@ -430,7 +447,11 @@ p {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   align-content: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: auto;
   min-height: 300px;
@@ -506,6 +527,13 @@ p {
 .text-side {
   flex: 1;
   padding: 0 1.2em;
+}
+
+
+.indent {
+  margin: 0 15%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .indent p {

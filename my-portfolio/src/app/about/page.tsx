@@ -10,13 +10,14 @@ export default function CoteBonnevilleRedesign() {
   return ( 
     <div className="container">
       <Nav />
-      <div className="content">
-        <div id="halo">
+      <div id="halo">
+        <div className="content">
 
-        
-        <h1>Meet Chris:</h1>
-        <div className="read-text">Hi! When I am not creating digital experiences, you can find me outdoors.</div>
-        <div className="read-text">I love to ski, fish, backpack, and explore new places.</div>
+
+        <h1>I'm Chris,</h1>
+        <div className="about-text">When I am not creating digital experiences, you can find me outdoors. I love to ski, fish, backpack, and explore new places. </div>
+        <div className="about-text">Click on the photos below to read about some of my adventures!</div>
+
         <div className="photos">
           <div className="photo1">
           <Image 
@@ -75,7 +76,7 @@ export default function CoteBonnevilleRedesign() {
         
        
         <h2>Bio</h2>
-        <div className="read-text">I grew up in Oregon, and am glad to call the PNW home. I went to the University of Washington
+        <div className="about-text">I grew up in Oregon, and am glad to call the PNW home. I went to the University of Washington
           and graduated with a B.S in Human Centered Design and Engineering in 2024. I have been working as a UX Architect and 
           Front-end Engineer since then. If you have any questions, or would like to work together, please reach out!
         </div>

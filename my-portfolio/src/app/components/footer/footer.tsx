@@ -19,7 +19,7 @@ const Footer = () => {
             src="/assets/insta.png"
             title="instagram"
             alt="instagram"
-            width={53}
+            width={40}
             height={40}
           />
         </a>
@@ -47,15 +47,15 @@ const Footer = () => {
             src="/assets/github(white).png"
             title="github"
             alt="github"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
           />
         </a>
       </div>
 
       <div className="my-row">
         <p className="small-text text-center">
-          Copyright © Chris Yamasaki 2026. All rights reserved.
+          Copyright © Chris Yamasaki 2025. All rights reserved.
         </p>
       </div>
     </div>

@@ -29,19 +29,23 @@ const Home: React.FC = () => {
             </div>
           </div>   
           <div className='slide-in'>
-            <div className="read-text">
+            <b className="read-text">
               As a UX Architect:
-            </div>
+            </b>
             <div className="read-text">
               I create pixel-perfect UIs that match a simple and effortless UX, where less is more.
             </div>
-            <div className="read-text">
+            <b className="read-text">
               As a Front-end Engineer:
-            </div>
+            </b>
             <div className="read-text">
               I bring designs to life with React, TypeScript, and Next.js.
             </div>
-            <div className='btn'><a  href='/about'>Meet Chris</a></div>
+            <div className="hobby-box">
+              <div className='btn'><a  href='/about'>Meet Chris</a></div>
+              <div className='btn'><a target='_blank' href='https://docs.google.com/document/d/175E-cJBcoG5cUtRynVgLSf-MYZxjr5V5l16qhBv8hY8/edit?usp=sharing'>Resume</a></div>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -18,9 +18,14 @@ export default function CoteBonnevilleRedesign() {
         <section className="indent">
           <div id="boogie">
             <Link href="/">&lt; BACK TO PORTFOLIO</Link>
-            </div>
-
-          <Image src="/assets/Cote logo (white).png" alt="Côte Bonneville Logo" className="main" width={340} height={340} />
+          </div>
+          <div className="direct-img">
+            <a className="direct-img" href="https://www.cotebonneville.com/" target="_blank">
+              <Image src="/assets/Cote logo (white).png" alt="Côte Bonneville Logo" width={340} height={340} />
+            </a>
+          </div>
+          
+          
 
           <section className="mummy">
             <h1>Redesign Overview</h1>
