@@ -58,6 +58,7 @@ const Home: React.FC = () => {
         <div className="folio-c">
           <ProjectCard title="My Start Up" image='/assets/PNB.png' link="https://peoplesnotebook.com/" text="Connecting through closed group social reflection"/>
           <ProjectCard title="A winery e-commerce redesign" image='/assets/cote_img.png' link="/Cote" text="Guiding users efficiently towards making a purchase"/>
+          <ProjectCard title="This website" image='/assets/inverse.png' link="https://github.com/theyamasakiman/Portfolio-V2" text="Building a portfolio unique to me"/>
           <ProjectCard title="Senior capstone" image='/assets/gear.png' link="https://drive.google.com/file/d/1PgSRLDxpOhzBuf-4uHfogZQgflrqt1zg/view?usp=sharing" text="Humanizing and personalizing online interactions"/>
           <ProjectCard title="Zest Friends" image='/assets/zestfriends.jpg' link="https://zestfriends.weebly.com/" text="Helping build community through cooking"/>
         </div>

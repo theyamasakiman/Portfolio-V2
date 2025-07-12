@@ -74,8 +74,11 @@ export default function CoteBonnevilleRedesign() {
         </div>
         
        
-        <h2>Design Process</h2>
-        <div className="read-text">The design process involved several iterations and user feedback sessions.</div>
+        <h2>Bio</h2>
+        <div className="read-text">I grew up in Oregon, and am glad to call the PNW home. I went to the University of Washington
+          and graduated with a B.S in Human Centered Design and Engineering in 2024. I have been working as a UX Architect and 
+          Front-end Engineer since then. If you have any questions, or would like to work together, please reach out!
+        </div>
         </div>
       </div>
       <Footer />
