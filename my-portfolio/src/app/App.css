@@ -31,27 +31,6 @@ html {
   
 }
 
-@keyframes slideOut {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(1000%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .slide-out {
   transition: transform 1s ease, opacity 1s ease;
 }
@@ -482,4 +461,94 @@ button {
   background-color: white;
   padding: 0;
   margin-bottom: 2%;
+}
+
+
+@media (max-width: 768px) {
+
+  .arrow {
+    width: 150px;
+    height: 150px;
+  }
+  .container {
+    width: auto;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .title-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .margr {
+    margin-right: 0;
+  }
+
+  .fol-con {
+    max-width: 286px;
+    margin: 20px 0px;
+  }
+
+  .photo img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .photo {
+    height: 286px;
+    width: 286px;
+  }
+  .folio-c {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card-text {
+    opacity: 1;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: normal;
+  }
+  .slide-out {
+    position: relative;
+  }
+  .slide-in {
+    margin-top: 50px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .design {
+    letter-spacing: 0.4rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  #halo {
+    max-width: fit-content;
+    background-color: none;
+    padding-bottom:0;
+  }
+  .animate {
+    flex-direction: column;
+    padding: .5rem;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
 }
