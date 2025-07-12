@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
         <a href="/"><Image src='/assets/logo_frame.png' alt="Logo" width={40} height={40}/></a>
       </div>
       <div className="nav-buttons">
+        <a className="nav-btn" href="/about">ABOUT</a>
         <a href="https://github.com/theyamasakiman" target="_blank" rel="noopener noreferrer">
           <Image id="github" src='/assets/github(white).png' alt="github" title="github" width={40} height={40} />
         </a>

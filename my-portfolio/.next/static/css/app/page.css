@@ -235,19 +235,31 @@ article img,
   height: 40px;
 }
 
-.nav-buttons.active {
-  display: flex;
-  gap: 50px;
+.btn {
+  background-color: #4B2E83;
+  margin: 2rem 0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #3a1f5c;
 }
 
 .nav-btn {
-  padding: 1rem;
-  background-color: #000;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s;
+  padding: .7rem;
+  font-size: 1.2rem;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 blockquote p {
@@ -306,6 +318,23 @@ p {
   border-radius: 20px;
   height: 340px;
   width: 340px;
+}
+
+.photo1 {
+  overflow: hidden;
+  border-radius: 20px;
+  height: 340px;
+  width: 340px;
+  margin: 20px;
+}
+
+.photo2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 150px;
+  width: 150px;
+  margin: 20px;
 }
 
 .fol-con:hover .card-text{
@@ -420,6 +449,43 @@ p {
   text-align: center;
   margin: auto;
   min-height: 300px;
+}
+
+.content p {
+  padding: 0 1.2em;
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.caption {
+  position: absolute;
+  text-align: center;
+  top: 0%; /* Position at the bottom of the photo2 container */
+  left: 0%;
+  width: 90%;
+  height: 90%;
+  padding: 10px; /* Add some padding for better appearance */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  opacity: 0;
+  /* Smooth transition for opacity over 0.3 seconds */
+  transition: opacity 0.3s ease-in-out;
+  /* Optional: Prevents the caption from blocking mouse events on the image itself */
+  pointer-events: none; 
+}
+
+/* State on hover over photo2 */
+.photo2:hover .caption {
+  opacity: 1; /* Make the caption fully visible */
+  pointer-events: auto; /* Allow mouse events on the caption when visible */
 }
 
 .spacer {
@@ -554,12 +620,6 @@ button {
   .animate {
     flex-direction: column;
     padding: .5rem;
-  }
-
-  .nav-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
 
   .hamburger {

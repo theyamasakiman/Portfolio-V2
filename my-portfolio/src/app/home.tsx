@@ -39,8 +39,9 @@ const Home: React.FC = () => {
               As a Front-end Engineer:
             </div>
             <div className="read-text">
-              I bring to life designs with React, TypeScript, and Next.js.
+              I bring designs to life with React, TypeScript, and Next.js.
             </div>
+            <div className='btn'><a  href='/about'>Meet Chris</a></div>
           </div>
         </div>
       </div>
