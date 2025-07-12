@@ -22,7 +22,7 @@ export default function CoteBonnevilleRedesign() {
           <Image 
             width = {350}
             height = {350}
-            src="/assets/IMG_3572.JPG" 
+            src="/assets/IMG_3572.jpg" 
             alt="Chris skiing in a maroon jacket and yellow pants at Snowbird, UT" 
           />
 
@@ -43,7 +43,7 @@ export default function CoteBonnevilleRedesign() {
             <Image 
               width = {150}
               height = {150}
-              src="/assets/Rainier.JPG" 
+              src="/assets/Rainier.jpg" 
               alt="Chris taking a selfie with Mt. Rainier in the background" 
             />
             <div className="caption">Pow day at Crystal Mountain with Rainier in the background!</div>
