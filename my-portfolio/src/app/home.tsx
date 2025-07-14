@@ -3,11 +3,6 @@ import React from 'react';
 import Navbar from './components/nav/navbar';
 import ProjectCard from './components/card/card';
 import '../app/App.css';
-import logo from './assets/logo_frame.png';
-import CBV from './assets/cote_img.png';
-import CGB from './assets/gear.png';
-import zest from './assets/zestfriends.jpg';
-import pnb from './assets/PNB.png'
 import Footer from './components/footer/footer';
 import Image from "next/image";
 
@@ -29,23 +24,22 @@ const Home: React.FC = () => {
             </div>
           </div>   
           <div className='slide-in'>
-            <b className="read-text">
+            <div className="read-text bolded">
               As a UX Architect:
-            </b>
-            <div className="read-text">
-              I create pixel-perfect UIs that match a simple and effortless UX, where less is more.
             </div>
-            <b className="read-text">
+            <div className="read-text">
+              I create responsive, pixel-perfect, UIs that match a simple and effortless UX, where less is more.
+            </div>
+            <div className="read-text bolded">
               As a Front-end Engineer:
-            </b>
+            </div>
             <div className="read-text">
               I bring designs to life with React, TypeScript, and Next.js.
             </div>
             <div className="hobby-box">
               <div className='btn'><a  href='/about'>Meet Chris</a></div>
-              <div className='btn'><a target='_blank' href='https://docs.google.com/document/d/175E-cJBcoG5cUtRynVgLSf-MYZxjr5V5l16qhBv8hY8/edit?usp=sharing'>Resume</a></div>
+              <div className='btn'><a target='_blank' href='https://docs.google.com/document/d/175E-cJBcoG5cUtRynVgLSf-MYZxjr5V5l16qhBv8hY8/edit?usp=sharinghttps://docs.google.com/document/d/175E-cJBcoG5cUtRynVgLSf-MYZxjr5V5l16qhBv8hY8/edit?usp=sharing'>Resume</a></div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -60,11 +54,11 @@ const Home: React.FC = () => {
         </div>
 
         <div className="folio-c">
-          <ProjectCard title="My Start Up" image='/assets/PNB.png' link="https://peoplesnotebook.com/" text="Connecting through closed group social reflection"/>
-          <ProjectCard title="A winery e-commerce redesign" image='/assets/cote_img.png' link="/Cote" text="Guiding users efficiently towards making a purchase"/>
-          <ProjectCard title="This website" image='/assets/inverse.png' link="https://github.com/theyamasakiman/Portfolio-V2" text="Building a portfolio unique to me"/>
-          <ProjectCard title="Senior capstone" image='/assets/gear.png' link="https://drive.google.com/file/d/1PgSRLDxpOhzBuf-4uHfogZQgflrqt1zg/view?usp=sharing" text="Humanizing and personalizing online interactions"/>
-          <ProjectCard title="Zest Friends" image='/assets/zestfriends.jpg' link="https://zestfriends.weebly.com/" text="Helping build community through cooking"/>
+          <ProjectCard title="PeoplesNotebook" image='/assets/PNB.png' link="https://peoplesnotebook.com/" text="My start up: connection through closed group social reflection" tag={['UX', 'Dev']}/>
+          <ProjectCard title="A winery e-commerce redesign" image='/assets/cote_img.png' link="/Cote" text="Guiding users efficiently towards making a purchase" tag={['UX']}/>
+          <ProjectCard title="This website" image='/assets/inverse.png' link="https://github.com/theyamasakiman/Portfolio-V2" text="Building a portfolio unique to me" tag={['UX', 'Dev']}/>
+          <ProjectCard title="Community Gearbox" image='/assets/gear.png' link="https://drive.google.com/file/d/1PgSRLDxpOhzBuf-4uHfogZQgflrqt1zg/view?usp=sharing" text="Senior capstone: humanizing and personalizing online interactions" tag={['UX']}/>
+          <ProjectCard title="Zest Friends" image='/assets/zestfriends.jpg' link="https://zestfriends.weebly.com/" text="Helping build community through cooking" tag={['UX']}/>
         </div>
 
         <Footer />

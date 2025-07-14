@@ -315,6 +315,12 @@ p {
   width: 100%;
 }
 
+.bolded {
+  padding-top: 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
 .photo {
   overflow: hidden;
   border-radius: 20px;
@@ -338,6 +344,7 @@ p {
   width: 150px;
   margin: 20px;
 }
+
 
 .fol-con:hover .card-text{
   opacity: 1;
@@ -400,11 +407,36 @@ p {
   padding-top: 20px;
 }
 
+.tag-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+}
+
+.UX {
+  background-color: #4B2E83;
+  color: white;
+}
+
+.Dev {
+  color:#4B2E83;
+  background-color: white;
+}
 
 .read-text {
   font-size: 1.2rem;
   padding-top: 10px;
   line-height: 2rem;
+  max-width: 700px;
 }
 
 .about-text {
@@ -413,6 +445,7 @@ p {
   padding-top: 10px;
   line-height: 2rem;
   width: 70%;
+  max-width: 700px;
 }
 
 .small-text {
@@ -483,6 +516,7 @@ p {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 500px;
 }
 
 .caption {
@@ -507,6 +541,14 @@ p {
 .photo2:hover .caption {
   opacity: 1; /* Make the caption fully visible */
   pointer-events: auto; /* Allow mouse events on the caption when visible */
+}
+
+.photo2:hover img {
+  transform: scale(1.05);
+}
+
+.photo2 img {
+  transition: transform 0.3s ease-in-out;
 }
 
 .spacer {
